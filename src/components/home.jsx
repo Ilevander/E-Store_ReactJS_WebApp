@@ -1,39 +1,25 @@
 import React from 'react';
 import styled from 'styled-components';
+import backgroundImage from './landingpage.png';
+
 
 const Home = () => {
   return (
     <HomePageContainer>
-      <WelcomeMessage>
-        <h1>Welcome to My Store</h1>
-        <p>Explore our wide range of products and find the perfect items for you.</p>
-      </WelcomeMessage>
     </HomePageContainer>
   );
 };
 
-export default Home;
-
 const HomePageContainer = styled.div`
   display: flex;
-  flex-direction: column;
   align-items: center;
-  padding: 20px;
+  height: 100vh;
+  background: url(${backgroundImage}) center/cover no-repeat;
+  margin-top: 0; 
 `;
 
-const WelcomeMessage = styled.div`
-  text-align: center;
-  max-width: 600px;
-  margin-bottom: 30px;
+export default Home;
 
-  h1 {
-    color: #333;
-    font-size: 2em;
-    margin-bottom: 10px;
-  }
 
-  p {
-    color: #666;
-    font-size: 1.2em;
-  }
-`;
+
+

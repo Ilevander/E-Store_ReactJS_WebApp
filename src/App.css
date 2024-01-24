@@ -9,23 +9,23 @@ body {
 }
 
 a {
-    color: darkslategray;
+    color: rgb(10, 83, 67);
     text-decoration: none;
 }
 
 /* Style the header */
 header {
-    background-color: #666;
+    background-color: black;
     padding: 30px;
     text-align: center;
     font-size: 35px;
-    color: white;
+    color: yellow;
     display: grid;
     grid-template-columns: 0.1fr 0.1fr 1fr 0.1fr;
 }
 
 header a {
-    color: white;
+    color: rgba(243, 241, 114, 0.952);
 }
 
 #search {
@@ -61,7 +61,7 @@ nav {
     -webkit-flex: 0.5;
     -ms-flex: 0.5;
     flex: 0.1;
-    background: #ccc;
+    background: rgba(243, 241, 114, 0.952);
     padding: 20px;
 }
 
@@ -88,7 +88,7 @@ main {
 
 /* Style the footer */
 footer {
-    background-color: #777;
+    background-color: black;
     padding: 10px;
     text-align: center;
     color: white;

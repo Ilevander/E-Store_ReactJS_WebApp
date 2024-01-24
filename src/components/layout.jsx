@@ -6,6 +6,7 @@ import { Outlet, Link } from "react-router-dom";
 import { HomeIcon, CartIcon } from "./icons";
 import Search from "./search";
 
+
 const Layout = ({ categories }) => {
     const renderCategories = () => {
         return categories.data.map((c) => (
@@ -23,7 +24,7 @@ const Layout = ({ categories }) => {
                 </div>
                 <Search />
 
-                <div id="headerTitle">Ilyass E-Store</div>
+                <div id="headerTitle">Ilyass IT Store</div>
                 <div id="headerCartIcon">
                     <Link to="/basket"><CartIcon width={40} /></Link>
                 </div>
@@ -62,7 +63,7 @@ const Layout = ({ categories }) => {
 export default Layout;
 
 const StyledFooter = styled.footer`
-  background-color:  #777;
+  background-color:  black;
   padding: 20px;
   text-align: center;
 `;
@@ -72,7 +73,7 @@ const FooterLinks = styled.div`
 
   a {
     margin: 0 15px;
-    color: #333;
+    color: yellow;
     text-decoration: none;
     font-weight: bold;
 
@@ -85,6 +86,6 @@ const FooterLinks = styled.div`
 const FooterInfo = styled.div`
   p {
     margin: 5px 0;
-    color: #555;
+    color: rgba(243, 241, 114, 0.952);
   }
 `;
